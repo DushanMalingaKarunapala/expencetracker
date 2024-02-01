@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 700px;
+  /* border: 1px solid black; */
+  margin: 20px 400px;
+}
+/* balance section start*/
+.balance-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.balance-sum {
+  display: flex;
+  flex-direction: column;
+  margin-right: 250px;
+}
+
+.balance-sum h3 {
+  align-items: flex-start;
+  margin: 2px 0;
+}
+
+.balance-sum p {
+  margin: 2px 0;
+  font-size: x-large;
+  font-weight: 600;
+}
+.bal-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2px 4px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px;
+}
+/* balance section end */
+
+/* history section section start */
+
+.history-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-header h3 {
+  margin-right: 250px;
+}
+.history-transactions-list {
+  margin: 5px 10px;
+}
+.items-list {
+  margin-left: 5px;
+}
+.history-transactions-list li {
+  list-style: none;
+  text-align: start;
+  box-sizing: border-box;
+  border: 1px solid rgb(248, 245, 245);
+  border-radius: 2px;
+  box-shadow: 2px 2px 3px;
+  margin: 5px 5px;
+  padding: 5px 2px;
+}
+
+/* history section section end */
+
+/* transaction section section start */
+.transaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.transaction-header h3 {
+  margin-right: 200px;
+  padding: 0;
+}
+
+.item-name {
+  display: flex;
+  flex-direction: column;
+}
+.item-name p {
+  margin-right: 350px;
+}
+
+.item-amount {
+  display: flex;
+  flex-direction: column;
+}
+.item-amount p {
+  margin-right: 330px;
+}
+
+.add-trans-btn {
+  padding: 4px 1px;
+  margin: 5px 0px;
+  background-color: rgb(115, 14, 178);
+  color: white;
+}
