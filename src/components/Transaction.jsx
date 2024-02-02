@@ -1,8 +1,14 @@
 import { useState } from "react";
 
-export const Transaction = ({ onaddnewhistory }) => {
-  const [text, setText] = useState("");
-  const [amount, setAmount] = useState(0);
+export const Transaction = ({
+  onaddnewhistory,
+  text,
+  amount,
+  setAmount,
+  setText,
+}) => {
+  // const [text, setText] = useState("");
+  // const [amount, setAmount] = useState(0);
 
   function handlesumbit(e) {
     e.preventDefault();
@@ -17,7 +23,7 @@ export const Transaction = ({ onaddnewhistory }) => {
     onaddnewhistory(newhistory);
 
     setText("");
-    setAmount(0);
+    setAmount("");
   }
 
   return (

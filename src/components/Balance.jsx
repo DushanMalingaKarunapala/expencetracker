@@ -1,21 +1,19 @@
-import { useState } from "react";
-
-export const Balance = () => {
-  const [balance, setBalance] = useState(200);
+export const Balance = ({ expence, income }) => {
+  let balance = income + expence;
   return (
     <div className="balance-section">
       <div className="balance-sum">
         <h3>Your Balance</h3>
-        <p>${balance}</p>
+        <p>{balance < expence ? "You dont have enough balance" : balance}</p>
       </div>
       <div className="bal-box">
         <div>
           <p>Income</p>
-          <p style={{ color: "green" }}>$500.00</p>
+          <p style={{ color: "green" }}>${income}</p>
         </div>
         <div>
           <p>Expence</p>
-          <p style={{ color: "red" }}>$240.00</p>
+          <p style={{ color: "red" }}>${expence}</p>
         </div>
       </div>
     </div>
